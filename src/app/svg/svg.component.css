@@ -1,0 +1,23 @@
+.icon.isAllList{
+    background: url("/assets/all-reg-list.svg") no-repeat;
+    background-position: 16px 19px;
+    background-size: 20px;
+}
+
+.icon.isDynamic{
+    background: url("/assets/dynamic-list.svg") no-repeat right;
+    background-position: 16px 19px;
+    background-size: 20px;
+}
+
+.icon.isEmptyList{
+    background: url("/assets/empty-reg-list.svg") no-repeat right;
+    background-position: 16px 19px;
+    background-size: 20px;
+}
+
+.icon{
+    height: 44px;
+    width: 39px;
+    display: inline-block;
+}

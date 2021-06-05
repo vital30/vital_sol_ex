@@ -1,0 +1,124 @@
+.container{
+    width: 1000px;
+    margin:0 auto;
+    direction: rtl;
+}
+
+.rows:first-child{
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 2px solid greenyellow;
+}
+
+.rows:not(:first-child) .name input, .rows .firstRow .name input{
+    color:#02bad8;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.rows{
+    border-bottom: 1px solid #cacaca;
+    height: 63px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rows .isEmpty{
+    width: 49%;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 13px;
+    color: #9f9f9f;
+}
+
+.rows .firstRow{
+    width: 14%;
+    margin-left: 45px;
+    vertical-align: super;
+}
+
+.rows .firstRow > span{
+    display: block;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+
+.rows .firstRow > span.date input{
+    font-size: 11px;
+    color: #9f9f9f;
+    display: inline;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    width: 96px;
+}
+
+.rows .firstRow > span.edit{
+    background: url(/assets/edit.svg) no-repeat right;
+    background-size: 9px;
+    height: 15px;
+    width: 18px;
+    background-position: 5px 6px;
+    float: right;
+    cursor: pointer;
+}
+
+.rows .firstRow > span.date input.isEditebleRow, .rows .firstRow > span.name input.isEditebleRow{
+    border: 1px solid #cecece;
+}
+
+.rows > span{
+    width: 128px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    height: 43px;
+}
+
+.rows > span.icon{
+    width: 39px;
+    display: inline-block;
+    text-align: center;
+}
+
+.rows > span.active{
+    color:#75e604
+}
+
+.rows > span.newadded{
+    color:#02bad8
+}
+
+.rows > span.removed{
+    color:rgb(138, 0, 0)
+}
+
+.rows > span p{
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+
+/************* LTR Direction************** */
+
+
+.isDirectionLTR{
+    direction: ltr;
+}
+
+.isDirectionLTR .rows .firstRow{
+    margin-left: 0;
+}
+
+.isDirectionLTR .rows .firstRow > span.edit{
+    float: left;
+}
+
+.isDirectionLTR .rows .isEmpty{
+    text-align: left;
+    margin-left: 50px;
+}

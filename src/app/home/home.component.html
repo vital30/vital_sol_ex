@@ -1,0 +1,30 @@
+
+<select #select (change)="changeDirection(select.value)">
+    <option>HE</option>
+    <option>EN</option>
+</select>
+
+<div class="container" [ngClass]="{'isDirectionLTR' : isDirectionLTR === true }">
+    <div class="content">
+
+        <div class="rows" *ngFor="let row of rowData">
+            <span class="firstRow">
+                 <span class="name"><input type="text" value="{{'names.'+row.course.name | translate}}" [disabled]="isDisabledRow ? true : null" [ngClass]="{'isEditebleRow' : isDisabledRow === false }"/></span>
+                 <span class="edit" (click)="editRow()"></span>
+                 <span class="date"><input type="datetime" value="{{row.course.date}}" [disabled]="isDisabledRow ? true : null" [ngClass]="{'isEditebleRow' : isDisabledRow === false }"/></span>
+            </span>
+               <app-svg [rowListData]="row"></app-svg>
+
+                <span class="isEmpty" *ngIf="row.state.total === 0">{{ 'isempty' | translate }}</span>
+                <span class="active" *ngIf="row.state.total != 0">{{row.state.active}}<p>{{ 'active' | translate }}</p></span>
+                <span class="newadded" *ngIf="row.state.total != 0">{{row.state.new}}<p>{{ 'newadded' | translate }}</p></span>
+                <span class="removed" *ngIf="row.state.total != 0">{{row.state.removed}}<p>{{ 'removed' | translate }}</p></span>
+                <span class="blocked" *ngIf="row.state.total != 0">{{row.state.blocked}}<p>{{ 'blocked' | translate }}</p></span>
+                <span class="stopped" *ngIf="row.state.total != 0">{{row.state.stopped}}<p>{{ 'stopped' | translate }}</p></span>
+                <span class="total" *ngIf="row.state.total != 0">{{row.state.total}}<p>{{ 'total' | translate }}</p></span>
+        
+        
+        </div>
+    </div>
+
+</div>

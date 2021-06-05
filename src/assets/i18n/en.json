@@ -1,0 +1,18 @@
+{
+  "isempty": "No Users, To add users go to Import or search the menu",
+  "active": "active",
+  "newadded": "New Added",
+  "removed": "Removed",
+  "blocked": "Blocked",
+  "stopped": "Stopped",
+  "total": "Total",
+
+  "names":{
+    "נרשמי וובינר שיווק":"Wobiner Users ",
+    "נרשמים עם קופון הנחה":" Used Coupons  ",
+    "הגיעו לסמינר ראשון ושני":"Arived to seminars",
+    "כל הנרשמים":" All Users",
+    "נרשמי בטא":" Beta Users"
+  }
+
+}
